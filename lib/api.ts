@@ -18,7 +18,10 @@ export interface Chapter {
   verses_count: number;
   name: string;
   translation: string;
-  summary: string;
+  summary: {
+    en: string;
+    hi: string;
+  };
 }
 
 export const api = {
