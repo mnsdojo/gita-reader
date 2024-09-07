@@ -1,5 +1,3 @@
-// app/search/page.tsx
-
 "use client";
 
 import { Verse } from "@/lib/api";
