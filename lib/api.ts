@@ -51,15 +51,6 @@ export const api = {
   },
 
   searchVerses: async (query: string): Promise<Verse[]> => {
-    // Implement search functionality (you might need to fetch all verses and filter server-side)
-    // This is a placeholder implementation
-    const response = await fetch(`${API_BASE_URL}/all-verses`);
-    if (!response.ok) throw new Error("Failed to fetch verses for search");
-    const verses: Verse[] = await response.json();
-    return verses.filter(
-      (verse: Verse) =>
-        verse.slok.toLowerCase().includes(query.toLowerCase()) ||
-        verse.tej.et.toLowerCase().includes(query.toLowerCase())
-    );
+    return [];
   },
 };
